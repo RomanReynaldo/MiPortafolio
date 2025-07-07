@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiar Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+        textarea,
+        input[type="text"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical; /* Permite redimensionar verticalmente */
+            min-height: 80px;
+        }
+        button {
+            background-color: #28a745; /* Un color verde para copiar */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Copiar de A a B</h1>
+        
+        <label for="cajaA">Caja de Origen (A):</label>
+        <textarea id="cajaA" placeholder="Escribe algo aquí para copiar..."></textarea>
+
+        <button onclick="copiarTexto()">Copiar a Caja B</button>
+
+        <label for="cajaB">Caja de Destino (B):</label>
+        <textarea id="cajaB" readonly placeholder="El texto copiado aparecerá aquí..."></textarea>
+    </div>
+
+    <script>
+        function copiarTexto() {
+            // Obtenemos el valor de la caja de origen (cajaA)
+            const textoOrigen = document.getElementById('cajaA').value;
+            
+            // Asignamos ese valor a la caja de destino (cajaB)
+            document.getElementById('cajaB').value = textoOrigen;
+        }
+    </script>
+</body>
+</html>

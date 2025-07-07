@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Roman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/plantilla.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MiPaginaWeb.html">Iniciar </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-info text-white py-5 hero-section">
+        <div class="container text-center">
+            <img src="img/viaje.jpg" class="rounded" width="150" alt="Foto de perfil">
+            <h1>Hola, soy Reynaldo Roman]</h1>
+            <p class="lead">Desarrollador Web Full Stack</p>
+            <a href="#proyectos" class="btn btn-light btn-lg">Ver mis proyectos</a>
+        </div>
+    </section>
+
+   <!-- Proyectos -->
+<section id="proyectos" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Mis Proyectos</h2>
+        <div class="row g-4">
+            <!-- Proyecto 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/logo.png" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Descripción breve. Tecnologías: HTML, CSS, JavaScript.</p>
+                        <a href="MiPaginaWeb.html" class="btn btn-primary ">Ver demo</a>                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/logo.png" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Descripción breve. Tecnologías: Base de datos, App de escritorio.</p>
+                        <a href="cajadeTexto.html" class="btn btn-primary">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/logo.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Descripción breve. Tecnologías: Conectividad.</p>
+                        <a href="bootstrap3.html" class="btn btn-primary">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Cierre del row -->
+    </div> <!-- Cierre del container -->
+</section>
+
+   <!-- Contacto -->
+<section id="contacto" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Contacto</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10"> <!-- Ajusta el ancho aquí -->
+                <form class="bg-white p-4 rounded shadow-sm"> <!-- Sombras y bordes -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" required></textarea> <!-- Más espacio -->
+                    </div>
+                    <div class="d-grid"> <!-- Botón ancho -->
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección Sobre mí -->
+<section id="sobre-mi" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna de la foto -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="text-center">
+            <img src="img/viaje.jpg" alt="Mi foto" class="img-fluid rounded shadow" style="max-width: 250px;">
+            <div class="mt-4">
+              <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-github"></i></a>
+              <a href="#" class="btn btn-outline-primary"><i class="bi bi-file-earmark-person"></i> CV</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Columna del texto -->
+        <div class="col-lg-8">
+          <h2 class="fw-bold mb-4">Sobre <span class="text-primary">mí</span></h2>
+          
+          <div class="mb-4">
+            <h4 class="mb-3">¡Hola! Soy <span class="text-primary">Reynaldo Roman</span></h4>
+            <p class="lead">Desarrollador Full Stack con 10 años de experiencia creando soluciones innovqdoras de sistemas informaticos.</p>
+          </div>
+          
+          <!-- Habilidades -->
+          <div class="mb-4">
+            <h5 class="mb-3"><i class="bi bi-gear me-2"></i>Mis habilidades</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-primary">HTML5</span>
+              <span class="badge bg-primary">CSS3</span>
+              <span class="badge bg-primary">JavaScript</span>
+              <span class="badge bg-primary">Bootstrap</span>
+              <span class="badge bg-primary">React</span>
+              <span class="badge bg-primary">Node.js</span>
+              <span class="badge bg-primary">MySQL</span>
+            </div>
+          </div>
+          
+          <!-- Experiencia -->
+          <div class="mb-4">
+            <h5 class="mb-3"><i class="bi bi-briefcase me-2"></i>Experiencia</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong>Desarrollador Web Full Stack</strong> en <span class="text-primary">Empresa Mendoza</span> <small>(2015-2024)</small>
+                <ul class="text-muted mt-1 ps-3" style="list-style-type: disc;">
+                  <li>Desarrollo de aplicaciones web con <strong>React.js</strong> (Frontend) y <strong>Node.js</strong> (Backend).</li>
+                  <li>Optimización de rendimiento, reduciendo tiempos de carga en un <strong>30%</strong>.</li>
+                  <li>Trabajo en metodologías <strong>ágiles (Scrum)</strong> y coordinación con equipos multidisciplinarios.</li>
+                  <li>Integración de <strong>APIs RESTful</strong> y gestión de bases de datos <strong>SQL/NoSQL</strong>.</li>
+                </ul>
+              </li>
+              <li class="mb-3">
+                <strong>Practicante Frontend</strong> en <span class="text-primary">Startup ABC</span> <small>(2024-Actualidad)</small>
+                <ul class="text-muted mt-1 ps-3" style="list-style-type: disc;">
+                  <li>Implementación de interfaces <strong>responsivas</strong> y accesibles (<strong>WCAG</strong>) con <strong>Bootstrap 5</strong>.</li>
+                  <li>Participación en el rediseño de la plataforma principal, mejorando la experiencia de usuario (<strong>UX/UI</strong>).</li>
+                  <li>Uso de <strong>Git/GitHub</strong> para control de versiones y despliegues continuos.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">© 2025 Roman Mendoza. Todos los derechos reservados.</p>
+            <div class="mt-2">
+                <a href="#" class="text-white mx-2"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bg-info"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
