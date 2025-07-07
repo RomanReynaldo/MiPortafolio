@@ -13,7 +13,7 @@ Portafolio personal donde muestro mis proyectos, habilidades técnicas y experie
 -  **SEO optimizado** (meta tags, keywords, etc.).  
 
 ## 🌍 Ver Online  
-👉 [Haz clic aquí para visitar el sitio](https://tuusuario.github.io/MiPortafolio/)  
+👉 [Haz clic aquí para visitar el sitio](https://RomanReynaldo.github.io/MiPortafolio/)  
 
 ##  Tecnologías Utilizadas  
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+), Bootstrap 5.  
